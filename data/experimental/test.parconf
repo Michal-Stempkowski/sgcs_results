@@ -1,0 +1,112 @@
+{
+    "_node_id": "AlgorithmConfiguration",
+    "algorithm_variant": "GCS",
+    "evolution": {
+        "_node_id": "EvolutionConfiguration",
+        "custom_rule_adding_hint": null,
+        "operators": {
+            "_node_id": "EvolutionOperatorsConfiguration",
+            "crossover": {
+                "_node_id": "EvolutionOperatorConfiguration",
+                "chance": 0.01
+            },
+            "inversion": {
+                "_node_id": "EvolutionOperatorConfiguration",
+                "chance": 0.01
+            },
+            "mutation": {
+                "_node_id": "EvolutionOperatorConfiguration",
+                "chance": 0.01
+            }
+        },
+        "selectors": [
+            {
+                "_node_id": "EvolutionRandomSelectorConfiguration",
+                "type": 0
+            },
+            {
+                "_node_id": "EvolutionTournamentSelectorConfiguration",
+                "tournament_size": 3,
+                "type": 1
+            }
+        ]
+    },
+    "induction": {
+        "_coverage": {
+            "_node_id": "CoverageConfiguration",
+            "_operators": {
+                "_aggressive": {
+                    "_chance": 0.01,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": 1
+                },
+                "_full": {
+                    "_chance": 0.01,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": 1
+                },
+                "_node_id": "CoverageOperatorsConfiguration",
+                "_starting": {
+                    "_chance": 0.01,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": 1
+                },
+                "_terminal": {
+                    "_chance": 0.01,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": null
+                },
+                "_universal": {
+                    "_chance": 0.01,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": null
+                }
+            }
+        },
+        "_grammar_correction": {
+            "_node_id": "GrammarCorrection",
+            "should_run": true
+        },
+        "_node_id": "CykConfiguration"
+    },
+    "max_algorithm_runs": 51,
+    "max_algorithm_steps": 2,
+    "max_execution_time": 901,
+    "rule": {
+        "_node_id": "RuleConfiguration",
+        "adding": {
+            "_crowding": {
+                "_factor": 1,
+                "_node_id": "CrowdingConfiguration",
+                "_size": 1
+            },
+            "_node_id": "AddingRulesConfiguration",
+            "elitism": {
+                "_node_id": "ElitismConfiguration",
+                "is_used": true,
+                "size": 2
+            },
+            "max_non_terminal_rules": 41
+        },
+        "max_non_terminal_rules": null,
+        "max_non_terminal_symbols": 33,
+        "random_starting_population_size": 21,
+        "starting_symbol": {
+            "_node_id": "Symbol",
+            "symbol_id": 1
+        },
+        "universal_symbol": null
+    },
+    "satisfying_fitness": 0.99,
+    "should_run_evolution": true,
+    "statistics": {
+        "_node_id": "ClassicalStatisticsConfiguration",
+        "base_fitness": 11.0,
+        "classical_fitness_weight": 2.0,
+        "fertility_weight": 2.0,
+        "invalid_sentence_price": 2.0,
+        "negative_weight": 2.0,
+        "positive_weight": 2.0,
+        "valid_sentence_price": 2.0
+    }
+}
