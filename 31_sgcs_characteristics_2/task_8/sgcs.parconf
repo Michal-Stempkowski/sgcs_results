@@ -1,0 +1,105 @@
+{
+    "_node_id": "AlgorithmConfiguration",
+    "algorithm_variant": "sGCS",
+    "evolution": {
+        "_node_id": "EvolutionConfiguration",
+        "custom_rule_adding_hint": null,
+        "operators": {
+            "_node_id": "EvolutionOperatorsConfiguration",
+            "crossover": {
+                "_node_id": "EvolutionOperatorConfiguration",
+                "chance": 0.2
+            },
+            "inversion": {
+                "_node_id": "EvolutionOperatorConfiguration",
+                "chance": 0.0
+            },
+            "mutation": {
+                "_node_id": "EvolutionOperatorConfiguration",
+                "chance": 0.8
+            }
+        },
+        "selectors": [
+            {
+                "_node_id": "EvolutionRouletteSelectorConfiguration",
+                "type": 2
+            },
+            {
+                "_node_id": "EvolutionRouletteSelectorConfiguration",
+                "type": 2
+            }
+        ]
+    },
+    "induction": {
+        "_coverage": {
+            "_node_id": "CoverageConfiguration",
+            "_operators": {
+                "_aggressive": {
+                    "_chance": 0.0,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": 0
+                },
+                "_full": {
+                    "_chance": 1.0,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": 0
+                },
+                "_node_id": "CoverageOperatorsConfiguration",
+                "_starting": {
+                    "_chance": 1.0,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": 0
+                },
+                "_terminal": {
+                    "_chance": 1.0,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": null
+                },
+                "_universal": {
+                    "_chance": 0.0,
+                    "_node_id": "CoverageOperatorConfiguration",
+                    "adding_hint": null
+                }
+            }
+        },
+        "_grammar_correction": {
+            "_node_id": "GrammarCorrection",
+            "should_run": false
+        },
+        "_node_id": "CykConfiguration"
+    },
+    "max_algorithm_runs": 50,
+    "max_algorithm_steps": 5000,
+    "max_execution_time": 9000,
+    "rule": {
+        "_node_id": "RuleConfiguration",
+        "adding": {
+            "_crowding": {
+                "_factor": 18,
+                "_node_id": "CrowdingConfiguration",
+                "_size": 3
+            },
+            "_node_id": "AddingRulesConfiguration",
+            "elitism": {
+                "_node_id": "ElitismConfiguration",
+                "is_used": false,
+                "size": 3
+            },
+            "max_non_terminal_rules": 40
+        },
+        "max_non_terminal_rules": null,
+        "max_non_terminal_symbols": 19,
+        "random_starting_population_size": 30,
+        "starting_symbol": {
+            "_node_id": "Symbol",
+            "symbol_id": 1
+        },
+        "universal_symbol": null
+    },
+    "satisfying_fitness": 1.0,
+    "should_run_evolution": true,
+    "statistics": {
+        "_node_id": "PasiekaStatisticsConfiguration",
+        "negative_sentence_learning": false
+    }
+}
