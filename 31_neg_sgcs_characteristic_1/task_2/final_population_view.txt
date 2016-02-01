@@ -1,0 +1,36 @@
++++++++++++++StochasticRulePopulation+++++++++++++
+<S> => 'b'
+B => 'b'
+<S> => 'a'
+A => 'a'
+O => L; U
+D => Q; C
+L => B; B
+L => Q; Q
+J => A; U
+J => B; Q
+E => K; K
+<S> => <S>; L
+H => M; G
+<S> => <S>; A
+G => E; R
+C => A; A
+E => T; N
+R => L; K
+P => K; D
+L => K; I
+U => B; Q
+R => J; S
+H => K; K
+L => F; J
+B => E; C
+O => O; R
+<S> => B; <S>
+E => M; L
+<S> => C; <S>
+P => H; I
+F => G; B
+H => U; R
+L => E; S
+I => O; G
+++++++++++StochasticRulePopulation ends+++++++++++
