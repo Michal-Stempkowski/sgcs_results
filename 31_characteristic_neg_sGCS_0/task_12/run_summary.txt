@@ -1,0 +1,18 @@
++++++++++++++++++++RunEstimator+++++++++++++++++++
+n_success=(4, 10)
+n_evals=1932.75
+s=1125.702752728268
+min_evals=234
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Ngen: 0.9971770378734702
+falseomission: 0.0016041800348336236
+falsediscovery: 1.0
+prevalence: 0.0016022217474898526
+sensitivity: 0.0
+fallout: 0.0012226994146326553
+specificity: 0.9987773005853674
+accuracy: 0.9971770378734702
+fitness: 0.9971770378734702
+missrate: 1.0
+negpredictive: 0.9983958199651664
+precision: 0.0
